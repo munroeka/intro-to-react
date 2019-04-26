@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ToDo from './components/ToDo';
+import ToDo from './components/ToDo.js';
 
 class App extends Component {
   constructor(props){
@@ -19,7 +19,7 @@ class App extends Component {
         <ul>
           {
             this.state.todos.map((todo,index)=>
-            <ToDo key={index}/>)
+            <ToDo key={index} description={todo.description} isCompleted={todo.isCompleted} />)
           }
           
         </ul>

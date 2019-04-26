@@ -4,6 +4,8 @@ class ToDo extends Component {
     render(){
         return (
             <li> A todo will go here </li>
+            <li>{ this.props.description }</li>
+
         );
     }
 }
