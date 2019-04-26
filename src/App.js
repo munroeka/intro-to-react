@@ -9,6 +9,7 @@ class App extends Component {
         <ul>
           <ToDo />
           <ToDo />
+          <ToDo />
         </ul>
       </div>
     );
